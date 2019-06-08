@@ -1,6 +1,13 @@
-# _*_ coding:utf-8 _*_
+#!/usr/bin/env python3
+"""
+Download the ticker list from NASDAQ and save as csv.
+Output filename: ./input/tickerList.csv
+"""
 import csv
+import sys
+
 from urllib.request import urlopen
+
 import numpy as np
 
 
@@ -8,7 +15,7 @@ def get_tickers(percent):
     """Keep the top percent market-cap companies."""
     assert isinstance(percent, int)
 
-    file = open('../data/tickerList.csv', 'w')
+    file = open('./input/tickerList.csv', 'w')
     writer = csv.writer(file, delimiter=',')
     cap_stat, output = np.array([]), []
     for exchange in ["NASDAQ", "NYSE", "AMEX"]:
@@ -40,11 +47,12 @@ def get_tickers(percent):
 
 
 def main():
-    top_n = 20
+    if len(sys.argv) < 2:
+        print('Usage: ./all_tickers.py <int_percent>')
+        return
+    top_n = sys.argv[1]
     get_tickers(int(top_n)) # keep the top N% market-cap companies
 
 
 if __name__ == "__main__":
     main()
-
-

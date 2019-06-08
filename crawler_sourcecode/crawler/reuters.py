@@ -1,4 +1,9 @@
-# _*_ coding:utf-8 _*_
+#!/usr/bin/env python3
+"""
+Crawl news headlines from Reuters and save as csv.
+Input file: ./input/tickerList.csv
+News append to: ./input/news_reuters.csv
+"""
 import os
 import sys
 import time
@@ -7,7 +12,6 @@ import datetime
 # import util from parent directory
 # credit: https://stackoverflow.com/a/11158224/4246348
 import inspect
-
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
@@ -17,10 +21,10 @@ import util
 class ReutersCrawler(object):
 
     def __init__(self):
-        self.ticker_list_filename = '../data/tickerList.csv'
-        self.finished_reuters_filename = '../data/finished.reuters'
-        self.failed_reuters_filename = '../data/news_failed_tickers.csv'
-        self.news_filename = '../data/news_reuters.csv'
+        self.ticker_list_filename = './input/tickerList.csv'
+        self.finished_reuters_filename = './input/finished.reuters'
+        self.failed_reuters_filename = './input/news_failed_tickers.csv'
+        self.news_filename = './input/news_reuters.csv'
 
     def load_finished_tickers(self):
         # when we restart a task, we may call calc_finished_ticker() in crawler/yahoo_finance.py
@@ -48,7 +52,7 @@ class ReutersCrawler(object):
         suffix = {'AMEX': '.A', 'NASDAQ': '.O', 'NYSE': '.N'}
         # e.g. https://www.reuters.com/finance/stocks/company-news/BIDU.O?date=09262017
         url = "https://www.reuters.com/finance/stocks/company-news/" + ticker + suffix[exchange]
-
+        
         ticker_failed = open(self.failed_reuters_filename, 'a+')
         today = datetime.datetime.today().strftime("%Y%m%d")
 
@@ -84,11 +88,11 @@ class ReutersCrawler(object):
         has_content = False
         no_news_days = []
         for timestamp in date_range:
-            print('trying ' + timestamp, end='\r', flush=True)  # print timestamp on the same line
-            new_time = timestamp[4:] + timestamp[:4]  # change 20151231 to 12312015 to match reuters format
+            print('trying '+timestamp, end='\r', flush=True)  # print timestamp on the same line
+            new_time = timestamp[4:] + timestamp[:4] # change 20151231 to 12312015 to match reuters format
             soup = util.get_soup_with_repeat(url + "?date=" + new_time)
             if soup and self.parse_and_save_news(soup, task, ticker, timestamp):
-                missing_days = 0  # if get news, reset missing_days as 0
+                missing_days = 0 # if get news, reset missing_days as 0
                 has_content = True
             else:
                 missing_days += 1
@@ -120,14 +124,14 @@ class ReutersCrawler(object):
 
                 print(ticker, timestamp, title, news_type)
                 # fout.write(','.join([ticker, task[1], timestamp, title, body, news_type]).encode('utf-8') + '\n')
-                fout.write(','.join([ticker, task[1], timestamp, title, body, news_type]) + '\n')
+                fout.write(','.join([ticker, task[1], timestamp, title, body, news_type])+ '\n')
         return True
 
     def run(self, numdays=1000):
         """Start crawler back to numdays"""
         finished_tickers = self.load_finished_tickers()
         failed_tickers = self.load_failed_tickers()
-        date_range = util.generate_past_n_days(numdays)  # look back on the past X days
+        date_range = util.generate_past_n_days(numdays) # look back on the past X days
 
         # store low-priority task and run later
         delayed_tasks = {'LOWEST': set(), 'LOW': set()}
@@ -153,8 +157,7 @@ class ReutersCrawler(object):
 
 def main():
     reuter_crawler = ReutersCrawler()
-    reuter_crawler.run(40)
-
+    reuter_crawler.run(30)
 
 if __name__ == "__main__":
     main()

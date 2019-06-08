@@ -1,4 +1,4 @@
-# _*_ coding:utf-8 _*_
+#!/usr/bin/env python3
 """
 Crawl daily price data from yahoo finance to generate raw data
 
@@ -24,12 +24,12 @@ from yqd import load_yahoo_quote
 
 
 def calc_finished_ticker():
-    os.system("awk -F',' '{print $1}' ../data/news_reuters.csv | sort | uniq > ../data/finished.reuters")
+    os.system("awk -F',' '{print $1}' ./input/news_reuters.csv | sort | uniq > ./input/finished.reuters")
 
 
 def get_stock_prices():
-    fin = open('../data/finished.reuters')
-    output = '../data/stockPrices_raw.json'
+    fin = open('./input/finished.reuters')
+    output = './input/stockPrices_raw.json'
 
     # exit if the output already existed
     if os.path.isfile(output):
@@ -47,7 +47,7 @@ def get_stock_prices():
         json.dump(price_set, outfile, indent=4)
 
 
-def repeat_download(ticker, start_date='20040101', end_date='29991201'):
+def repeat_download(ticker, start_date='20190501', end_date='29991201'):
     repeat_times = 3 # repeat download for N times
     for i in range(repeat_times):
         try:
