@@ -1,4 +1,18 @@
+# _*_ coding:utf-8 _*_
 #!/usr/bin/env python3
+"""
+Crawl daily price data from yahoo finance to generate raw data
+
+Require "./input/news_reuters.csv"
+==> "./input/finished.reuters" by calc_finished_ticker()
+==> "./input/stockPrices_raw.json" by get get_stock_prices()
+json structure:
+         ticker
+        /  |   \
+    open close adjust ...
+      /    |     \
+   dates dates  dates ...
+"""
 import sys
 import re
 import os
@@ -16,7 +30,7 @@ def calc_finished_ticker():
 
 def get_stock_prices():
     fin = open('./input/finished.reuters')
-    output = './input/stockPrices_raw.json'
+    output = './input/stockPrices_raw2.csv'
 
     # exit if the output already existed
     if os.path.isfile(output):
@@ -24,17 +38,19 @@ def get_stock_prices():
 
     price_set = {}
     price_set['^GSPC'] = repeat_download('^GSPC') # download S&P 500
+    print(repeat_download('AAPL'))
     for num, line in enumerate(fin):
         ticker = line.strip()
         print(num, ticker)
         price_set[ticker] = repeat_download(ticker)
         # if num >= 10: break # for testing purpose
+        print(price_set)
 
     with open(output, 'w') as outfile:
         json.dump(price_set, outfile, indent=4)
 
 
-def repeat_download(ticker, start_date='20190401', end_date='29991201'):
+def repeat_download(ticker, start_date='20190301', end_date='29991201'):
     repeat_times = 3 # repeat download for N times
     for i in range(repeat_times):
         try:
