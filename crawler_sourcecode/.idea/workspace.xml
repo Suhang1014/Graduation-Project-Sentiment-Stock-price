@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56b5c29a-072e-4d82-86ae-627fc8e47200" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../analysis/News.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis/News.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reuters.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/reuters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/yahoo_finance.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/yahoo_finance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/finished.reuters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/news_failed_tickers.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/news_reuters.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/stockPrices_raw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/tickerList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/tickerList.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tokenize_news.py" beforeDir="false" afterPath="$PROJECT_DIR$/tokenize_news.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crawler/reuters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
+            <state relative-caret-position="230">
               <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
               <folding>
                 <element signature="e#158#167#0" expanded="true" />
@@ -33,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input/news_reuters.csv">
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="false" fixedHeaders="false" rowLines="3">
@@ -41,7 +33,7 @@
             </state>
           </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-106173">
+            <state relative-caret-position="2064">
               <caret line="86" column="110" selection-start-line="10" selection-end-line="86" selection-end-column="110" />
             </state>
           </provider>
@@ -99,10 +91,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1925" />
-    <option name="y" value="23" />
-    <option name="width" value="1845" />
-    <option name="height" value="1518" />
+    <option name="x" value="180" />
+    <option name="y" value="125" />
+    <option name="width" value="1080" />
+    <option name="height" value="618" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -205,16 +197,18 @@
       <workItem from="1560604493424" duration="8623000" />
       <workItem from="1562074347801" duration="10968000" />
       <workItem from="1564042766555" duration="2340000" />
+      <workItem from="1564847208819" duration="251000" />
+      <workItem from="1565554934805" duration="340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37013000" />
+    <option name="totallyTimeSpent" value="37604000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1925" y="23" width="1845" height="1518" extended-state="0" />
+    <frame x="180" y="125" width="1080" height="618" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16139767" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16570328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -229,7 +223,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.33829787" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.3372549" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.088452086" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -277,20 +271,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/yahoo_finance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/stockPrices_raw.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14784">
-          <caret line="616" column="33" selection-start-line="616" selection-start-column="33" selection-end-line="616" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/input/stockPrices_raw.json" />
     <entry file="file://$PROJECT_DIR$/tokenize_news.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -298,19 +279,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/tickerList.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/reuters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
+        <state relative-caret-position="230">
           <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
           <folding>
             <element signature="e#158#167#0" expanded="true" />
@@ -325,8 +296,25 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-106173">
+        <state relative-caret-position="2064">
           <caret line="86" column="110" selection-start-line="10" selection-end-line="86" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/tickerList.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/yahoo_finance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>
