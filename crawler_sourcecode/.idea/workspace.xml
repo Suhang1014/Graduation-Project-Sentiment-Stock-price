@@ -2,8 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56b5c29a-072e-4d82-86ae-627fc8e47200" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../analysis/News.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis/News.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../analysis/LSTM.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../analysis/News.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../analysis/Prices.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../analysis/final_edition.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../analysis/test.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/input/finished.reuters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/input/news_failed_tickers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/input/news_reuters.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/input/stockPrices_raw.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/input/tickerList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/.reuters.py.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/all_tickers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/daily_prices.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/daily_reuters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/reuters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/yahoo_finance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/yahoo_finance2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/yqd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_label.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/del_repeat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/.ipynb_checkpoints/news_reuters-checkpoint.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/news_failed_tickers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/news_reuters.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tickerList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_model.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokenize_news.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,50 +42,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crawler/reuters.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reuters_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
+            <state relative-caret-position="1227">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               <folding>
-                <element signature="e#158#167#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input/news_reuters.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="false" fixedHeaders="false" rowLines="3">
-              <column index="0" width="100" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="2064">
-              <caret line="86" column="110" selection-start-line="10" selection-end-line="86" selection-end-column="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input/tickerList.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crawler/yahoo_finance.py">
+        <entry file="file://$PROJECT_DIR$/reuters/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state>
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reuters/article.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reuters/scraper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+              <folding>
+                <element signature="e#1#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-15905" />
           </provider>
         </entry>
       </file>
@@ -87,14 +116,16 @@
         <option value="$PROJECT_DIR$/tokenize_news.py" />
         <option value="$PROJECT_DIR$/input/tickerList.csv" />
         <option value="$PROJECT_DIR$/crawler/reuters.py" />
+        <option value="$PROJECT_DIR$/reuters/scraper.py" />
+        <option value="$PROJECT_DIR$/reuters_main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="180" />
-    <option name="y" value="125" />
-    <option name="width" value="1080" />
-    <option name="height" value="618" />
+    <option name="x" value="186" />
+    <option name="y" value="69" />
+    <option name="width" value="1143" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -104,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,17 +145,13 @@
             <path>
               <item name="crawler_sourcecode" type="b2602c69:ProjectViewProjectNode" />
               <item name="crawler_sourcecode" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crawler_sourcecode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crawler_sourcecode" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
+              <item name="reuters" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,16 +225,17 @@
       <workItem from="1564042766555" duration="2340000" />
       <workItem from="1564847208819" duration="251000" />
       <workItem from="1565554934805" duration="340000" />
+      <workItem from="1567495143691" duration="315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37604000" />
+    <option name="totallyTimeSpent" value="37919000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="180" y="125" width="1080" height="618" extended-state="0" />
+    <frame x="186" y="69" width="1143" height="733" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16570328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15894641" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -223,7 +250,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.3372549" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.2752" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.088452086" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -241,81 +268,50 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/input/finished.reuters" />
-    <entry file="file://$PROJECT_DIR$/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7656">
-          <caret line="319" column="14" lean-forward="true" selection-start-line="319" selection-start-column="14" selection-end-line="319" selection-end-column="14" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/yahoo_finance2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="e#391#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/news_failed_tickers.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/util.py" />
+    <entry file="file://$PROJECT_DIR$/crawler/yahoo_finance2.py" />
+    <entry file="file://$PROJECT_DIR$/input/news_failed_tickers.csv" />
     <entry file="file://$PROJECT_DIR$/input/stockPrices_raw.json" />
-    <entry file="file://$PROJECT_DIR$/tokenize_news.py">
+    <entry file="file://$PROJECT_DIR$/tokenize_news.py" />
+    <entry file="file://$PROJECT_DIR$/crawler/reuters.py" />
+    <entry file="file://$PROJECT_DIR$/input/news_reuters.csv" />
+    <entry file="file://$PROJECT_DIR$/input/tickerList.csv" />
+    <entry file="file://$PROJECT_DIR$/crawler/yahoo_finance.py" />
+    <entry file="file://$PROJECT_DIR$/reuters/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/reuters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
+        <state>
           <folding>
-            <element signature="e#158#167#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/news_reuters.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="false" fixedHeaders="false" rowLines="3">
-          <column index="0" width="100" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="2064">
-          <caret line="86" column="110" selection-start-line="10" selection-end-line="86" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/tickerList.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/yahoo_finance.py">
+    <entry file="file://$PROJECT_DIR$/reuters_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="1227">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reuters/article.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reuters/scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+          <folding>
+            <element signature="e#1#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15905" />
       </provider>
     </entry>
   </component>
